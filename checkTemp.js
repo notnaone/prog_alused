@@ -1,7 +1,6 @@
-var checkTemp = prompt('Mis on temperatuur?')
-if (checkTemp >= 0 && checkTemp <= 20)
-    console.log('-1')
-else if (checkTemp >= 21 && checkTemp <= 40)
-    console.log('0')
-else if (checkTemp >=41 && checkTemp <= 60)
-    console.log('1')
+function checkTemp(temp) {
+    if (0 <= temp && temp <= 20) return -1;
+    else if (21 <= temp && temp <= 40) return 0;
+    else if (41 <= temp && temp <= 60) return 1;   
+}
+console.log(checkTemp (5));
