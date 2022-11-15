@@ -2,7 +2,8 @@ const data = ["FWmcfgAWxe","KnFJXGcACq","cCYApSPiX0","iHwbq2giBx","X5Ebl6sjLf","
 let letter = "i"
 function countCode(letter){
     const startsWith = data.filter((word) => word.startsWith(letter));
-    console.log(startsWith.length);
+    //console.log(startsWith.length);
+    return startsWith.length;
     }
 
 countCode(letter);
